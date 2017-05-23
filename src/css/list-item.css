@@ -1,0 +1,40 @@
+.listItem {
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px #888888;
+  flex-direction: row;
+  font-weight: 300;
+  margin: 0 0 14px 0;
+  padding: 18px;
+}
+
+.listItem p {
+  margin: 0;
+}
+
+.listItem--concern {
+  border-top: 2px solid #f53d3d;
+}
+
+.listItem--concern .itemText {
+  color: #f53d3d;
+}
+
+.listItem--kudos {
+  border-top: 2px solid #32db64;
+}
+
+.listItem--kudos .itemText {
+  color: #32db64;
+}
+
+.itemName {
+  color: #999999;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.listItem .itemText {
+  font-size: 22px;
+  margin: 0 0 12px 0;
+}
