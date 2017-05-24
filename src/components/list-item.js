@@ -41,11 +41,11 @@ class ListItem extends Component {
               this.setState({
                 shouldFinishFlip: false,
               });
-            }, 400);
+            }, 490);
           });
         });
 
-      }, 400);
+      }, 490);
     });
   }
 
