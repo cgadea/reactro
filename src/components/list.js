@@ -10,7 +10,7 @@ class List extends Component {
       <div className="list">
         {
           items.map((item) => {
-            return <ListItem key={item.id} item={item} />
+            return <ListItem shouldFade={item.shouldFade} key={item.id} item={item} />
           })
         }
       </div>

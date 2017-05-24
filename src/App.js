@@ -8,7 +8,7 @@ class App extends Component {
 
     this.setState({
       concerns: [
-        { type: "kudos", text: "Foo", name: "Carlos", id: lastId + 1 },
+        { shouldFade: true, type: "kudos", text: "Foo", name: "Carlos", id: lastId + 1 },
       ].concat(concerns),
       lastId: lastId + 1,
     });
@@ -19,14 +19,11 @@ class App extends Component {
 
     this.state = {
       concerns: [
-        { type: "kudos", text: "Foo", name: "Carlos", id: 1 },
-        { type: "kudos", text: "Bar", name: "Arjun", id: 2 },
-        { type: "concern", text: "Herp", name: "Derp", id: 3 },
-        { type: "concern", text: "Hello", name: "Rick", id: 4 },
-        { type: "kudos", text: "Bye", name: "Morty", id: 5 },
-        { type: "concern", text: "Lulz", name: "Mike", id: 6 },
+        { shouldFade: false, type: "kudos", text: "Foo", name: "Carlos", id: 1 },
+        { shouldFade: false, type: "kudos", text: "Bar", name: "Arjun", id: 2 },
+        { shouldFade: false, type: "concern", text: "Herp", name: "Derp", id: 3 },
       ],
-      lastId: 6,
+      lastId: 3,
     };
   }
 
