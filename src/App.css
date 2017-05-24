@@ -8,4 +8,5 @@
 .container {
   background-color: #efefef;
   display: flex;
+  flex-direction: column;
 }

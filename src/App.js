@@ -3,6 +3,17 @@ import './App.css';
 import List from './components/list';
 
 class App extends Component {
+  addItem = () => {
+    const { concerns, lastId } = this.state;
+
+    this.setState({
+      concerns: [
+        { type: "kudos", text: "Foo", name: "Carlos", id: lastId + 1 },
+      ].concat(concerns),
+      lastId: lastId + 1,
+    });
+  }
+
   constructor(props) {
     super(props);
 
@@ -15,6 +26,7 @@ class App extends Component {
         { type: "kudos", text: "Bye", name: "Morty", id: 5 },
         { type: "concern", text: "Lulz", name: "Mike", id: 6 },
       ],
+      lastId: 6,
     };
   }
 
@@ -23,6 +35,9 @@ class App extends Component {
 
     return (
       <div className="card container">
+        <button onClick={this.addItem}>
+          Click Me
+        </button>
         <List items={concerns} />
       </div>
     );
